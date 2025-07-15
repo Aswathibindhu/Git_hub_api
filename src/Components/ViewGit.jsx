@@ -10,12 +10,17 @@ const ViewGit = () => {
         ]
     )
     const FetchData = () => {
-        axios.get("https://api.github.com/users").then(
+        axios.get(" https://api.github.com/users ").then(
             (response) => {
                 changeLoading(false)
                 changeData(response.data)
             }
-        ).catch("Something wrong" + Error)
+        ).catch
+        (
+            (error)=>{
+                    alert("Something Wrong"+error)
+            }
+        )
     }
     useEffect(() => { FetchData() }, [])
     return (
@@ -25,7 +30,7 @@ const ViewGit = () => {
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <div className="row g-3">
-                            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <div className="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -52,7 +57,7 @@ const ViewGit = () => {
 
                                                         <td>{value.id}</td>
                                                         <td>{value.node_id}</td>
-                                                        <td>{value.avatar_url}</td>
+                                                        <td><img className= "rounded-circle" src={value.avatar_url} height={50} width={50}/></td>
                                                         <td>{value.gravatar_id}</td>
                                                         <td>{value.html_url}</td>
                                                         <td>{value.followers_url}</td>

@@ -22,11 +22,11 @@ const AddGit = () => {
                     <div className="row g-3">
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Id</label>
-                            <input type="text" className="form-control" name='Id'value={input.Id} onChange={inputHandler} />
+                            <input type="text" className="form-control" name='Id' value={input.Id} onChange={inputHandler} />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Nodeid</label>
-                            <input type="text" className="form-control"name='Nodeid' value={input.NodeId} onChange={inputHandler} />
+                            <input type="text" className="form-control"name='Nodeid' value={input.Nodeid} onChange={inputHandler} />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">avatar_url</label>
@@ -38,7 +38,7 @@ const AddGit = () => {
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">url</label>
-                            <input type="text" className="form-control"name='url' value={input.type} onChange={inputHandler}/>
+                            <input type="text" className="form-control"name='url' value={input.url} onChange={inputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">html_url</label>
